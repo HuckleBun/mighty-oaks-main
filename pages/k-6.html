@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K-6th Grade Supply Lists - Mighty Oaks Enrichment Center</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <!-- Add this line to include Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Mighty Oaks Enrichment Center</div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./our-program.html">Our Program</a></li>
+        <li class="dropdown">
+          <a href="./class-information.html" id="class-info-link">
+            Class Information
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </a>
+          <ul class="dropdown-content" id="class-info-dropdown">
+            <li><a href="./k-2.html">K-2nd Grade Schedule 2024-2025</a></li>
+            <li><a href="./k-6.html">K-6th Grade Supply Lists 2024/2025</a></li>
+            <li><a href="./3-6.html">3rd-6th Grade Schedule 2024-2025</a></li>
+            <li>
+              <a href="./midhigh.html"
+                >Middle/High School Class Descriptions 2024/2025</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li><a href="./tuition-fees.html">Tuition & Fees</a></li>
+        <li><a href="./enrollment.html">Enrollment</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>K-6th Grade Supply Lists 2024/2025</h1>
+    </main>
+
+    <footer>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2012-2024 Mighty Oaks Enrichment Center. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const classInfoLink = document.getElementById("class-info-link");
+        const classInfoDropdown = document.getElementById(
+          "class-info-dropdown"
+        );
+        const chevronIcon = classInfoLink.querySelector(".fa-chevron-down");
+
+        function toggleDropdown(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          classInfoDropdown.classList.toggle("show");
+          classInfoLink.classList.toggle("active");
+        }
+
+        classInfoLink.addEventListener("click", toggleDropdown);
+        chevronIcon.addEventListener("click", toggleDropdown);
+
+        window.addEventListener("click", function (e) {
+          if (
+            !classInfoLink.contains(e.target) &&
+            !classInfoDropdown.contains(e.target)
+          ) {
+            classInfoDropdown.classList.remove("show");
+            classInfoLink.classList.remove("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

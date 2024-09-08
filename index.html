@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Add this line to include Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Mighty Oaks Enrichment Center</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/our-program.html">Our Program</a></li>
+        <li class="dropdown">
+          <a href="pages/class-information.html" id="class-info-link">
+            Class Information
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </a>
+          <ul class="dropdown-content" id="class-info-dropdown">
+            <li>
+              <a href="pages/k-2.html">K-2nd Grade Schedule 2024-2025</a>
+            </li>
+            <li>
+              <a href="pages/k-6.html">K-6th Grade Supply Lists 2024/2025</a>
+            </li>
+            <li>
+              <a href="pages/3-6.html">3rd-6th Grade Schedule 2024-2025</a>
+            </li>
+            <li>
+              <a href="pages/midhigh.html"
+                >Middle/High School Class Descriptions 2024/2025</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li><a href="pages/tuition-fees.html">Tuition & Fees</a></li>
+        <li><a href="pages/enrollment.html">Enrollment</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="about">
+        <div class="container">
+          <h1>Statement of Purpose</h1>
+          <p>
+            Mighty Oaks Enrichment Center exists to provide fun, hands on,
+            supplemental classes to assist families in the home education of
+            their children. All subjects are taught with a Christ-centered
+            Biblical perspective. We believe that God loves all people and He
+            has a purpose and a plan for the life of each individual. Our goal
+            is to encourage, support, and help equip each student as they seek
+            that purpose and develop their skills to fulfill God's plan for
+            their lives.
+          </p>
+        </div>
+        <div class="container">
+          <h1>Statement of Faith</h1>
+          <ul>
+            <li>
+              We believe the Bible is the inspired, inerrant, and authoritative
+              Word of God.
+              <br />
+              <strong>(2 Timothy 3:16-17; 2 Peter 1:19-21)</strong>
+            </li>
+            <li>
+              We believe in a literal, grammatical-historical interpretation of
+              the Bible, and accept the historical record of the Bible as
+              accurate. This includes the account of creation in Genesis 1.
+            </li>
+            <li>
+              We believe there is one God eternally existing in three persons:
+              Father, Son and Holy Spirit.
+              <br />
+              <strong
+                >(Matthew 28:19; John 1:1,18; 6:27; Acts 5:3-4; Titus
+                2:12-13)</strong
+              >
+            </li>
+            <li>
+              We believe that Jesus Christ is God Himself, came to earth in the
+              flesh, was born of a virgin, and lived a sinless life. He died a
+              substitutionary and atoning death on the cross. He arose bodily
+              from the grave and ascended into heaven where He presently sits at
+              the right hand of God.
+              <br />
+              <strong
+                >(Matthew 1:25; Luke 1:26-38; John 1:18; Acts 1:9-10; Romans
+                3:21-25; 8:34; 1 Corinthians 15:4; Ephesians1:20; 1 Timothy
+                2:5-6; Titus 2:13; Hebrews 7:25; 9:24; 13:8; 1 John
+                2:1-2)</strong
+              >
+            </li>
+            <li>
+              We believe that the Holy Spirit convicts the world of sin and
+              leads and guides believers into truth. He indwells believers
+              permanently, seals them unto the day of redemption, and bestows
+              spiritual gifts upon them.
+              <br />
+              <strong
+                >(John 16:8-11; Romans 8:16; 1 Corinthians 6:19; 12:1, 4;
+                Ephesians 1:13, 14; 4:30)</strong
+              >
+            </li>
+            <li>
+              We believe mankind is created in God's image, as male or female,
+              and that an individual's gender corresponds with his or her
+              God-given biological gender. Further, being descended from Adam,
+              all mankind inherits a sinful nature and is totally unable to save
+              themselves from the natural consequences of sin.
+              <br />
+              <strong
+                >(Genesis 1:27; 3; Psalm 139:14; Acts 4:12; Romans 1:18-32;
+                5:10-19; Ephesians 2:1-2)</strong
+              >
+            </li>
+            <li>
+              We believe that salvation is the gift of God's grace given to all
+              who "call upon the name of the Lord". It cannot be gained by good
+              works, but is a free gift for all who put their trust in Jesus
+              Christ and His finished work on the cross. All who trust in Jesus
+              Christ as Savior and Lord are forgiven and saved from their sins
+              and made righteous before God and given the right to be called His
+              children.
+              <br />
+              <strong>(Romans 10:12; Ephesians 1:4-8; 2:8-9)</strong>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Add other sections for classes, tuition, and contact -->
+    </main>
+
+    <footer>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2012-2024 Mighty Oaks Enrichment Center. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const classInfoLink = document.getElementById("class-info-link");
+        const classInfoDropdown = document.getElementById(
+          "class-info-dropdown"
+        );
+        const chevronIcon = classInfoLink.querySelector(".fa-chevron-down");
+
+        function toggleDropdown(e) {
+          e.preventDefault(); // Prevent the default link behavior
+          e.stopPropagation(); // Stop the event from bubbling up
+          classInfoDropdown.classList.toggle("show");
+          classInfoLink.classList.toggle("active");
+        }
+
+        classInfoLink.addEventListener("click", toggleDropdown);
+        chevronIcon.addEventListener("click", toggleDropdown);
+
+        // Close the dropdown when clicking outside of it
+        window.addEventListener("click", function (e) {
+          if (
+            !classInfoLink.contains(e.target) &&
+            !classInfoDropdown.contains(e.target)
+          ) {
+            classInfoDropdown.classList.remove("show");
+            classInfoLink.classList.remove("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
